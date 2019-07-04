@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE configuration>
 <configuration debug="true" scan="true" scanPeriod="40 seconds">
-    <!--<springProperty scope="scope" name="log.base" source="${logging.path}"/>-->
-    <!--<springProperty scope="scope" name="log.name" source="${logging.file}"/>-->
-    <Property name="log.base" value="E:/cloud_log_file/z_cloud4_nacos_server_log_file"/>
+<!--    <Property name="log.base" value="E:/cloud_log_file/z_cloud4_nacos_server_log_file"/>-->
+    <Property name="log.base" value="/cloud_log_file/z_cloud4_nacos_server_log_file"/>
     <Property name="log.name" value="z_cloud4_nacos_server"/>
-    <contextName>logback</contextName>
     <jmxConfigurator/>
     <!-- 控制台输出日志-->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
