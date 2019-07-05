@@ -1,6 +1,5 @@
 package com.cloud4.nacos.web;
 
-import com.alibabacloud2.commons.constants.Constants;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
+import com.alibabacloud2.commons.constants.Constant;
 
 /**
  * @author: HeYongLiu
@@ -18,16 +18,16 @@ import reactor.core.publisher.Mono;
 @RestController
 public class TestController {
 
-    @GetMapping(Constants.CLOUD4 + "/hello")
+    @GetMapping(Constant.CLOUD4 + "/hello")
     public String hello(@RequestParam String name) {
-        log.info("invoked name = {}" , name);
+        log.info("invoked name = {}", name);
         return "hello " + name;
     }
 
     @Autowired
     private WebClient.Builder webClientBuilder;
 
-    @GetMapping(Constants.CLOUD4 + "/test")
+    @GetMapping(Constant.CLOUD4 + "/test")
     public Mono<String> test() {
         Mono<String> result = webClientBuilder.build()
                 .get()

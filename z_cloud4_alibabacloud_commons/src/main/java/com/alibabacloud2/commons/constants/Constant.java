@@ -5,7 +5,7 @@ package com.alibabacloud2.commons.constants;
  * @create: 2019-06-05
  * @description: Constants
  **/
-public class Constants {
+public class Constant {
 
     /**
      * 成功
