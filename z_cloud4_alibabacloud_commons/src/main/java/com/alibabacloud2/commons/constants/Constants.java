@@ -1,4 +1,4 @@
-package com.alibabacloud.commons.constants;
+package com.alibabacloud2.commons.constants;
 
 /**
  * @author: LiuHeYong
@@ -18,7 +18,7 @@ public class Constants {
     /**
      * boot标识
      */
-    public static final String CLOUD3 = "cloud4";
+    public static final String CLOUD4 = "cloud4";
 
     /**
      * 统一异常跳转页面

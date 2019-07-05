@@ -1,4 +1,4 @@
-package com.alibabacloud.commons.utils;
+package com.alibabacloud2.commons.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
